@@ -88,10 +88,10 @@ $("#date-search-btn").on("click", function(event){
   if (month == 7 && year == 2021) {var index = 238; var index2 = 87; var index3 = 87}
   if (month == 8 && year == 2021) {var index = 262; var index2 = 261; var index3 = 87}
   if (month == 9 && year == 2021) {var index = 278; var index2 = 277; var index3 = 87}
-  if (month == 10 && year == 2020) {var index = 438; var index2 = 466; var index3 = 414}
-  if (month == 11 && day <= 13 && year == 2020) {var index = 466; var index2 = 451; var index3 = 75}
-  if (month == 11 && day > 13 && year == 2020) {var index = 466; var index2 = 451; var index3 = 510}
-  if (month == 12 && year == 2020) {var index = 510; var index2 = 496; var index3 = 514}
+  if (month == 10 && year == 2020) {var index = 438; var index2 = 467; var index3 = 414}
+  if (month == 11 && day <= 13 && year == 2020) {var index = 467; var index2 = 452; var index3 = 75}
+  if (month == 11 && day > 13 && year == 2020) {var index = 467; var index2 = 452; var index3 = 511}
+  if (month == 12 && year == 2020) {var index = 511; var index2 = 497; var index3 = 515}
   if (month == 10 && year == 2021) {var index = 359; var index2 = 385; var index3 = 338}
 
   //start ajax call to calendarific
@@ -103,6 +103,9 @@ var queryURL2 = "https://calendarific.com/api/v2/holidays?" + apiKey2 + "&countr
     url: queryURL2,
     method: "GET"
   }).then(function(response) {
+
+
+    console.table(response)
       
   var holidays = response.response.holidays[index].name
   var holidays2 = response.response.holidays[index2].name

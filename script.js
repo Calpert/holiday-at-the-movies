@@ -95,7 +95,7 @@ $("#date-search-btn").on("click", function(event){
   if (month == 10 && year == 2021) {var index = 359; var index2 = 385; var index3 = 338}
 
   //start ajax call to calendarific
-var apiKey2 = "&api_key=2c0d78047e25b08e93d37d75d73fcd356034fdc8"
+var apiKey2 = "&api_key=69d8dab98ce9f91cf7a29611abc1d1b7b9a42a5a"
 var queryURL2 = "https://calendarific.com/api/v2/holidays?" + apiKey2 + "&country=US&year=" + year.toString()
 
 
